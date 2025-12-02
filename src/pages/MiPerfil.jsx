@@ -2,16 +2,16 @@ import React, { useState } from "react";
 
 export default function MiPerfil() {
   const [userData] = useState({
-    nombre: "Carlos Mendoza",
-    email: "carlos.mendoza@gmail.com",
-    edad: 28,
-    peso: 82,
-    altura: 178,
+    nombre: "Alfred Anderz",
+    email: "ipretty_on@gmail.com",
+    edad: 21,
+    peso: 68,
+    altura: 180,
     pesoObjetivo: 78,
     imc: 25.9,
     grasaCorporal: 15.2,
     entrenamientos: 156,
-    nivel: "Avanzado",
+    nivel: "23 casi 24",
     diasActivo: 234,
     calorias: 2400,
   });
@@ -19,7 +19,7 @@ export default function MiPerfil() {
   const calcularIMCStatus = (imc) => {
     if (imc < 18.5) return { text: "Bajo peso", color: "#fbbf24" };
     if (imc < 25) return { text: "Normal", color: "#10b981" };
-    if (imc < 30) return { text: "Sobrepeso", color: "#f59e0b" };
+    if (imc < 30) return { text: "Peso Normal", color: "#f59e0b" };
     return { text: "Obesidad", color: "#ef4444" };
   };
 
